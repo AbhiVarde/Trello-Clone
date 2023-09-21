@@ -32,7 +32,7 @@ const Stage: React.FC<StageProps> = ({
 
   return (
     <div className="bg-gray-100 p-2 rounded-md shadow-md m-2 w-64">
-      <h2 className="text-lg font-semibold">{title}</h2>
+      <h2 className="text-lg font-semibold text-black">{title}</h2>
       <Droppable droppableId={id}>
         {(provided) => (
           <div
@@ -57,7 +57,7 @@ const Stage: React.FC<StageProps> = ({
         placeholder="Enter task name"
         value={newTaskContent}
         onChange={(e) => setNewTaskContent(e.target.value)}
-        className="p-2 m-2 rounded-md border border-gray-300 focus:outline-none"
+        className="p-2 m-2 rounded-md border border-gray-300 focus:outline-none text-black"
       />
       <button
         onClick={handleAddTask}

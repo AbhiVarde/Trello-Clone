@@ -174,7 +174,7 @@ const Board = ({ initialBoardData }: BoardProps) => {
             placeholder="Enter board name"
             value={newBoardName}
             onChange={(e) => setNewBoardName(e.target.value)}
-            className="p-2 rounded-md border border-gray-300 focus:outline-none w-48 md:w-56 lg:w-auto"
+            className="p-2 rounded-md border border-gray-300 focus:outline-none w-48 md:w-56 lg:w-auto text-black"
           />
           <button
             onClick={addBoard}
@@ -188,7 +188,9 @@ const Board = ({ initialBoardData }: BoardProps) => {
             key={board.id}
             className="my-4 bg-white p-4 rounded-lg shadow-md"
           >
-            <h2 className="text-lg font-semibold my-2">{board.title}</h2>
+            <h2 className="text-lg font-semibold my-2 text-black">
+              {board.title}
+            </h2>
             <div className="flex gap-2">
               <input
                 type="text"
@@ -200,7 +202,7 @@ const Board = ({ initialBoardData }: BoardProps) => {
                     [board.id]: e.target.value,
                   })
                 }
-                className="p-2 rounded-md border border-gray-300 focus:outline-none w-48 lg:w-auto"
+                className="p-2 rounded-md border border-gray-300 focus:outline-none w-48 lg:w-auto text-black"
               />
               <button
                 onClick={() => addStage(board.id)}

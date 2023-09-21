@@ -39,7 +39,7 @@ const Task = ({ index, task, editTask }: TaskProps) => {
                 type="text"
                 value={newContent}
                 onChange={handleChange}
-                className="w-full p-2 border border-black rounded"
+                className="w-full p-2 border border-black rounded text-black"
               />
               <button
                 className="border-2 p-2 bg-emerald-500 border-emerald-500 rounded-lg text-white hover:bg-emerald-600 hover:border-emerald-600"
@@ -54,7 +54,7 @@ const Task = ({ index, task, editTask }: TaskProps) => {
                 ref={provided.innerRef}
                 {...provided.draggableProps}
                 {...provided.dragHandleProps}
-                className="bg-white p-2 rounded-md shadow-md w-full"
+                className="bg-white p-2 rounded-md shadow-md w-full text-black"
               >
                 {task.content}
               </div>
