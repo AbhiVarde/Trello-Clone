@@ -230,7 +230,7 @@ const Board = ({ initialBoardData }: BoardProps) => {
       </div>
       <footer className="fixed bottom-0 left-0 right-0 text-center my-4 text-gray-400 ">
         &copy; {new Date().getFullYear()}, Designed & Build by{" "}
-        <a href="https://abhivarde.vercel.app" className="text-white">
+        <a href="https://www.abhivarde.in/" className="text-white">
           AbhiVarde
         </a>
         .
